@@ -8,6 +8,19 @@
     <script src="./script.js"></script>
 </head>
 <body onload="load()">
-   
+    <form action="https://accounts.spotify.com/en/status">
+        <label for="fname">Enter message:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+    </form>
+    <input type ="button" id = "btnclink" onclick="getInputValue();" />
+    <script>
+         function getInputValue(){
+            // Selecting the input element and get its value 
+            var inputVal = document.getElementById("fname").value;
+            
+            // Displaying the value
+            alert(inputVal);
+        }
+    </script>
 </body>
 </html>
